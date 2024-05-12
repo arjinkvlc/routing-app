@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/homeButton"
+    android:title=""
+    android:icon="@drawable/baseline_home_24"
+    />
+  <item
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mapButton"
+    android:title=""
+    android:icon="@drawable/baseline_map_24"
+    />
+  <item
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/favButton"
+    android:title=""
+    android:icon="@drawable/baseline_star_rate_24"/>
+  <item
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profileButton"
+    android:title=""
+    android:icon="@drawable/baseline_person_24"
+     />
+</menu>
