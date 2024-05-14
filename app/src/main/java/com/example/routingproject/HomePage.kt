@@ -5,13 +5,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.routingproject.databinding.ActivityHomePageBinding
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
 
 
-class HomePage : AppCompatActivity(),OnMapReadyCallback {
+class HomePage : AppCompatActivity() {
   lateinit var binding: ActivityHomePageBinding
-  private lateinit var myMap: GoogleMap
     override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
       binding = ActivityHomePageBinding.inflate(layoutInflater)
@@ -34,12 +31,10 @@ class HomePage : AppCompatActivity(),OnMapReadyCallback {
         true
       }
     }
-  fun replaceFragment(fragment: Fragment){
+    fun replaceFragment(fragment: Fragment){
     supportFragmentManager.beginTransaction().replace(binding.frameLayout.id,fragment).commit()
 
   }
 
-  override fun onMapReady(googleMap: GoogleMap) {
-    myMap=googleMap
-  }
+
 }
