@@ -6,7 +6,7 @@
     android:width="24dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <roundedRect
-        android:fillColor="#00E0FF"
+        android:fillColor="#007BFF"
         android:radius="8dp"
         android:topLeftRadius="8dp"
         android:topRightRadius="8dp"
@@ -17,7 +17,7 @@
         android:viewportHeight="24"
         android:viewportWidth="24"/>
     <path
-        android:fillColor="#00E0FF"
+        android:fillColor="#007BFF"
         android:pathData="M0,0h24v24H0V0z"/>
 
     <path

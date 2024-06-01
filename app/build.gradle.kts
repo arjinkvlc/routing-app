@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-  id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -19,6 +19,8 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
     }
 
     buildTypes {
@@ -51,9 +53,36 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.2.0")
     implementation ("com.google.maps.android:android-maps-utils:2.2.0")
     implementation ("com.google.maps:google-maps-services:0.17.0")
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    //Gson converter
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.7.7")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    //Gson converter
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
+    //Jsoup
+    implementation("org.jsoup:jsoup:1.14.3")
+
+    // Coil
+    implementation("io.coil-kt:coil:2.2.2")
+
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.7.7")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
 
 }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constrainLayout">
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textEmailAddress"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/userNameEditText"
+            app:layout_constraintStart_toStartOf="@id/userNameEditText"
+            app:layout_constraintTop_toBottomOf="@id/userNameEditText" />
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="phone"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/emailEditText"
+            app:layout_constraintStart_toStartOf="@id/emailEditText"
+            app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textPassword"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/phoneNumberEditText"
+            app:layout_constraintStart_toStartOf="@id/phoneNumberEditText"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberEditText" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Confirm your password"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textPassword"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/passwordEditText"
+            app:layout_constraintStart_toStartOf="@id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="50dp"
+            android:text="REGISTER"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#00E0FF"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="@id/confirmPasswordEditText"
+            app:layout_constraintStart_toStartOf="@id/confirmPasswordEditText"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

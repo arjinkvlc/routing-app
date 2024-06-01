@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RoutingProject</string>
+    <string name="app_name">Navify</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="map_api_key">AIzaSyD5y-blFQL9WPzmfXacOVUXJwerZWWp0gY</string>

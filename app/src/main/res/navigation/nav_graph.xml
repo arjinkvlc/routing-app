@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFirstPartFragment">
+
+    <fragment
+        android:id="@+id/registerFirstPartFragment"
+        android:name="com.example.routingproject.ui.register.RegisterFirstPartFragment"
+        android:label="Register First Part" >
+        <action
+            android:id="@+id/action_registerFirstPartFragment_to_registerSecondPartFragment"
+            app:destination="@id/registerSecondPartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerSecondPartFragment"
+        android:name="com.example.routingproject.ui.register.RegisterSecondPartFragment"
+        android:label="Register Second Part" >
+        <action
+            android:id="@+id/action_registerSecondPartFragment_to_loginPageActivity"
+            app:destination="@id/loginPageActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginPageActivity"
+        android:name="com.example.routingproject.ui.login.LoginPageActivity"
+        android:label="activity_login_page"
+        tools:layout="@layout/activity_login_page" />
+</navigation>

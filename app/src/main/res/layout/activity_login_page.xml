@@ -4,7 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".LoginPage">
+  tools:context=".ui.login.LoginPageActivity">
 
   <ImageView
     android:id="@+id/logoImageView"
@@ -14,7 +14,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/rlogo" />
+    app:srcCompat="@drawable/navify_logo" />
 
   <EditText
     android:id="@+id/usernameInputText"
@@ -52,7 +52,7 @@
     android:layout_marginTop="100dp"
     android:text="LOGIN"
     android:textColor="#FFFFFF"
-    android:textColorHighlight="#00E0FF"
+    android:textColorHighlight="@color/skyBlue"
     android:textColorLink="#000000"
     android:textSize="20sp"
     android:textStyle="bold|italic"
@@ -84,7 +84,7 @@
       android:layout_marginStart="5dp"
       android:layout_marginTop="20dp"
       android:text="REGISTER"
-      android:textColor="#00E0FF"
+      android:textColor="@color/skyBlue"
       android:textStyle="bold"
       android:textSize="18dp"
       android:clickable="true"

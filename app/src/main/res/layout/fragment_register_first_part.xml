@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Name"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/firstNameEditText"
+            app:layout_constraintStart_toStartOf="@id/firstNameEditText"
+            app:layout_constraintTop_toBottomOf="@id/firstNameEditText" />
+
+        <EditText
+            android:id="@+id/birthdayEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Birthday In Years"
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/lastNameEditText"
+            app:layout_constraintStart_toStartOf="@id/lastNameEditText"
+            app:layout_constraintTop_toBottomOf="@id/lastNameEditText" />
+
+        <EditText
+            android:id="@+id/idNumberEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="T.C."
+            android:minHeight="48dp"
+            android:textColorHint="#AFAFAF"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@id/birthdayEditText"
+            app:layout_constraintStart_toStartOf="@id/birthdayEditText"
+            app:layout_constraintTop_toBottomOf="@id/birthdayEditText" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="50dp"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#00E0FF"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintEnd_toEndOf="@id/idNumberEditText"
+            app:layout_constraintStart_toStartOf="@id/idNumberEditText"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

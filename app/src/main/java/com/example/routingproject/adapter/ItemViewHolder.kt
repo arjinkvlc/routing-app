@@ -12,8 +12,8 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val optionsButton: ImageButton
 
     init {
-        itemTextView = itemView.findViewById<TextView>(R.id.itemTextView)
-        starButton = itemView.findViewById<ImageButton>(R.id.starButton)
+        itemTextView = itemView.findViewById<TextView>(R.id.title_text_view)
+        starButton = itemView.findViewById<ImageButton>(R.id.favorites_image_view)
         optionsButton = itemView.findViewById<ImageButton>(R.id.deleteButton)
     }
 

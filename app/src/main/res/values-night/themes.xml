@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.RoutingProject" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.RoutingProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/skyBlue</item>
+        <item name="colorPrimaryVariant">@color/skyBlue</item>
+        <item name="colorOnPrimary">@color/skyBlue</item>
     </style>
+
+    <style name="Theme.RoutingProject" parent="Base.Theme.RoutingProject" />
 </resources>

@@ -19,9 +19,16 @@
   <item
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/favButton"
+    android:id="@+id/discoverButton"
     android:title=""
-    android:icon="@drawable/baseline_star_rate_24"/>
+    android:icon="@drawable/baseline_travel_explore_24"/>
+  <item
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/favoritesButton"
+      android:title=""
+      android:icon="@drawable/baseline_star_rate_24"
+      />
   <item
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
